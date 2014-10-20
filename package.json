@@ -7,7 +7,8 @@
     "url": "https://github.com/feross/blob-to-buffer/issues"
   },
   "dependencies": {
-    "typedarray-to-buffer": "^1.0.4"
+    "typedarray-to-buffer": "^1.0.4",
+    "zuul": "^1.11.2"
   },
   "devDependencies": {
     "tape": "2.x",
@@ -28,7 +29,7 @@
     "url": "git://github.com/feross/blob-to-buffer.git"
   },
   "scripts": {
-    "test": "testling"
+    "test": "zuul -- test/*.js"
   },
   "testling": {
     "files": "test/*.js",
