@@ -1,8 +1,4 @@
-# blob-to-buffer
-
-[![Build Status][travis-image]][travis-url]
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
+# blob-to-buffer [![Build Status][travis-image]][travis-url] [![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url]
 
 #### Convert a Blob to a [Buffer](https://github.com/feross/buffer).
 
