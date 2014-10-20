@@ -2,7 +2,7 @@
 
 #### Convert a Blob to a [Buffer](https://github.com/feross/buffer).
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/simple-websocket.svg)](https://saucelabs.com/u/simple-websocket)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/blob-to-buffer.svg)](https://saucelabs.com/u/blob-to-buffer)
 
 Say you're using the ['buffer'](https://github.com/feross/buffer) module on npm, or
 [browserify](http://browserify.org/) and you're working with lots of binary data.
