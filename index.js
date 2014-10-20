@@ -1,6 +1,9 @@
 var toBuffer = require('typedarray-to-buffer')
 
 module.exports = function blobToBuffer (blob, cb) {
+  if (typeof Blob === 'undefined' || !(blob instanceof Blob))
+    return cb(new Error('not a blob'))
+
   var reader = new FileReader()
   reader.addEventListener('load', function (e) {
     // uint8array -> buffer without copy
@@ -8,10 +11,5 @@ module.exports = function blobToBuffer (blob, cb) {
     cb(null, buffer)
   })
   reader.addEventListener('error', cb)
-
-  try {
-    reader.readAsArrayBuffer(blob)
-  } catch (err) {
-    cb(err)
-  }
+  reader.readAsArrayBuffer(blob)
 }

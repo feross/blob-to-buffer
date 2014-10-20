@@ -6,7 +6,9 @@ test('Basic tests', function (t) {
 
   toBuffer(blob, function (err, buffer) {
     if (err) throw err
-    t.deepEqual(buffer, new Buffer([1, 2, 3]))
+    t.equal(buffer[0], 1)
+    t.equal(buffer[1], 2)
+    t.equal(buffer[2], 3)
     t.end()
   })
 })
@@ -14,7 +16,7 @@ test('Basic tests', function (t) {
 
 test('Callback error on invalid blob', function (t) {
   toBuffer({ blah: 1 }, function (err, buffer) {
-    t.ok(err instanceof Error)
+    t.ok(err)
     t.ok(!buffer)
     t.end()
   })
