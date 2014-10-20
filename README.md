@@ -1,4 +1,8 @@
-# blob-to-buffer [![travis](https://img.shields.io/travis/feross/blob-to-buffer.svg)](https://travis-ci.org/feross/blob-to-buffer) [![npm](https://img.shields.io/npm/v/blob-to-buffer.svg)](https://npmjs.org/package/blob-to-buffer) [![downloads](https://img.shields.io/npm/dm/blob-to-buffer.svg)](https://npmjs.org/package/blob-to-buffer) [![gittip](https://img.shields.io/gittip/feross.svg)](https://www.gittip.com/feross/)
+# blob-to-buffer
+
+[![Build Status][travis-image]][travis-url]
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
 
 #### Convert a Blob to a [Buffer](https://github.com/feross/buffer).
 
@@ -39,3 +43,10 @@ buffer.readUInt8(1) // => 2
 ### license
 
 MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+
+[travis-image]: https://img.shields.io/travis/feross/blob-to-buffer.svg?style=flat
+[travis-url]: https://travis-ci.org/feross/blob-to-buffer
+[npm-image]: https://img.shields.io/npm/v/blob-to-buffer.svg?style=flat
+[npm-url]: https://npmjs.org/package/blob-to-buffer
+[downloads-image]: https://img.shields.io/npm/dm/blob-to-buffer.svg?style=flat
+[downloads-url]: https://npmjs.org/package/blob-to-buffer
