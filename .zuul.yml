@@ -7,4 +7,4 @@ browsers:
   - name: safari
     version: 6..latest
   - name: ie
-    version: 9..latest
+    version: 10..latest
