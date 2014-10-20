@@ -1,0 +1,43 @@
+{
+  "name": "blob-to-buffer",
+  "description": "Convert a Blob to a Buffer",
+  "version": "1.0.0",
+  "author": "Feross Aboukhadijeh <feross@feross.org> (http://feross.org/)",
+  "bugs": {
+    "url": "https://github.com/feross/blob-to-buffer/issues"
+  },
+  "dependencies": {
+    "typedarray-to-buffer": "^1.0.4"
+  },
+  "devDependencies": {
+    "tape": "2.x",
+    "testling": "^1.7.1"
+  },
+  "homepage": "https://github.com/feross/blob-to-buffer",
+  "keywords": [
+    "convert",
+    "blob",
+    "buffer",
+    "browserify",
+    "filereader"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/blob-to-buffer.git"
+  },
+  "scripts": {
+    "test": "testling"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/10..latest",
+      "chrome/25..latest",
+      "firefox/20..latest",
+      "safari/6..latest",
+      "opera/15.0..latest"
+    ]
+  }
+}
