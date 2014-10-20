@@ -8,8 +8,9 @@ Say you're using the ['buffer'](https://github.com/feross/buffer) module on npm,
 [browserify](http://browserify.org/) and you're working with lots of binary data.
 
 Unfortunately, sometimes the browser or someone else's API gives you a `Blob`. Silly
-browser. How do you convert it to a`Buffer`? What's that goofy `FileReader` code look
-like? Time to Google for it yet again... There must be a better way!
+browser. How do you convert it to a `Buffer`?
+
+Something with a goofy `FileReader` thingy... Time to Google for it yet again... There must be a better way!
 
 ***There is! Simply use this module!***
 
