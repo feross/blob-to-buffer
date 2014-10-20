@@ -6,9 +6,7 @@ test('Basic tests', function (t) {
 
   toBuffer(blob, function (err, buffer) {
     if (err) throw err
-    t.equal(buffer[0], 1)
-    t.equal(buffer[1], 2)
-    t.equal(buffer[2], 3)
+    t.deepEqual(buffer, new Buffer([1, 2, 3]))
     t.end()
   })
 })
