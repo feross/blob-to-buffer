@@ -2,7 +2,9 @@ var toBuffer = require('typedarray-to-buffer')
 
 module.exports = function blobToBuffer (blob, cb) {
   if (typeof Blob === 'undefined' || !(blob instanceof Blob))
-    return cb(new Error('not a blob'))
+    throw new Error('first argument must be a Blob')
+  if (typeof cb !== 'function')
+    throw new Error('second argument must be a function')
 
   var reader = new FileReader()
   reader.addEventListener('load', function (e) {
