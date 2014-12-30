@@ -7,7 +7,7 @@
     "url": "https://github.com/feross/blob-to-buffer/issues"
   },
   "dependencies": {
-    "typedarray-to-buffer": "^1.0.4"
+    "typedarray-to-buffer": "^3.0.1"
   },
   "devDependencies": {
     "tape": "2.x",
