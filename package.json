@@ -10,7 +10,7 @@
     "typedarray-to-buffer": "^3.0.1"
   },
   "devDependencies": {
-    "tape": "^3.0.3",
+    "tape": "^4.0.0",
     "zuul": "^1.11.2"
   },
   "homepage": "https://github.com/feross/blob-to-buffer",
