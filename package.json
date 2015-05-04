@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "tape": "^4.0.0",
-    "zuul": "^1.11.2"
+    "zuul": "^3.0.0"
   },
   "homepage": "https://github.com/feross/blob-to-buffer",
   "keywords": [
