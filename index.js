@@ -13,22 +13,12 @@ module.exports = function blobToBuffer (blob, cb) {
 
   var reader = new FileReader()
 
-  function onLoad (e) {
-    unregisterEvents()
-    cb(null, toBuffer(e.target.result))
+  function onLoadEnd (e) {
+    reader.removeEventListener('loadend', onLoadEnd, false)
+    if (e.error) cb(e.error)
+    else cb(null, toBuffer(reader.result))
   }
 
-  function onError (err) {
-    unregisterEvents()
-    cb(err)
-  }
-
-  function unregisterEvents () {
-    reader.removeEventListener('load', onLoad)
-    reader.removeEventListener('error', onError)
-  }
-
-  reader.addEventListener('load', onLoad)
-  reader.addEventListener('error', onError)
+  reader.addEventListener('loadend', onLoadEnd, false)
   reader.readAsArrayBuffer(blob)
 }
