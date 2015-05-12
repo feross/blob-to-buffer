@@ -10,6 +10,7 @@
     "typedarray-to-buffer": "^3.0.1"
   },
   "devDependencies": {
+    "standard": "^3.8.0",
     "tape": "^4.0.0",
     "zuul": "^3.0.0"
   },
@@ -28,7 +29,7 @@
     "url": "git://github.com/feross/blob-to-buffer.git"
   },
   "scripts": {
-    "test": "zuul -- test/*.js"
+    "test": "standard && zuul -- test/*.js"
   },
   "testling": {
     "files": "test/*.js",

@@ -1,3 +1,5 @@
+/* global Blob */
+
 var toBuffer = require('../')
 var test = require('tape')
 
@@ -10,7 +12,6 @@ test('Basic tests', function (t) {
     t.end()
   })
 })
-
 
 test('Callback error on invalid arguments', function (t) {
   t.throws(function () {
