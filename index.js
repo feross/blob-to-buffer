@@ -1,5 +1,6 @@
 /* global Blob, FileReader */
 
+// arraybuffer -> buffer without copy
 var toBuffer = require('typedarray-to-buffer')
 
 module.exports = function blobToBuffer (blob, cb) {
@@ -11,11 +12,23 @@ module.exports = function blobToBuffer (blob, cb) {
   }
 
   var reader = new FileReader()
-  reader.addEventListener('load', function (e) {
-    // uint8array -> buffer without copy
-    var buffer = toBuffer(new Uint8Array(e.target.result))
-    cb(null, buffer)
-  })
-  reader.addEventListener('error', cb)
+
+  function onLoad (e) {
+    unregisterEvents()
+    cb(null, toBuffer(e.target.result))
+  }
+
+  function onError (err) {
+    unregisterEvents()
+    cb(err)
+  }
+
+  function unregisterEvents () {
+    reader.removeEventListener('load', onLoad)
+    reader.removeEventListener('error', onError)
+  }
+
+  reader.addEventListener('load', onLoad)
+  reader.addEventListener('error', onError)
   reader.readAsArrayBuffer(blob)
 }
