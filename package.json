@@ -10,7 +10,7 @@
     "typedarray-to-buffer": "^3.0.1"
   },
   "devDependencies": {
-    "standard": "^3.8.0",
+    "standard": "^4.5.2",
     "tape": "^4.0.0",
     "zuul": "^3.0.0"
   },
