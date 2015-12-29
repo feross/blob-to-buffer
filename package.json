@@ -1,7 +1,7 @@
 {
   "name": "blob-to-buffer",
   "description": "Convert a Blob to a Buffer",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Feross Aboukhadijeh <feross@feross.org> (http://feross.org/)",
   "bugs": {
     "url": "https://github.com/feross/blob-to-buffer/issues"
