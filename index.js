@@ -1,8 +1,5 @@
 /* global Blob, FileReader */
 
-// arraybuffer -> buffer without copy
-var toBuffer = require('typedarray-to-buffer')
-
 module.exports = function blobToBuffer (blob, cb) {
   if (typeof Blob === 'undefined' || !(blob instanceof Blob)) {
     throw new Error('first argument must be a Blob')
@@ -16,7 +13,7 @@ module.exports = function blobToBuffer (blob, cb) {
   function onLoadEnd (e) {
     reader.removeEventListener('loadend', onLoadEnd, false)
     if (e.error) cb(e.error)
-    else cb(null, toBuffer(reader.result))
+    else cb(null, new Buffer(reader.result))
   }
 
   reader.addEventListener('loadend', onLoadEnd, false)
