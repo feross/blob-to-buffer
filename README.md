@@ -42,9 +42,9 @@ var buffer = toBuffer(blob, function (err, buffer) {
 
 MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
 
-[travis-image]: https://img.shields.io/travis/feross/blob-to-buffer/master.svg?style=flat
+[travis-image]: https://img.shields.io/travis/feross/blob-to-buffer/master.svg
 [travis-url]: https://travis-ci.org/feross/blob-to-buffer
-[npm-image]: https://img.shields.io/npm/v/blob-to-buffer.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/blob-to-buffer.svg
 [npm-url]: https://npmjs.org/package/blob-to-buffer
-[downloads-image]: https://img.shields.io/npm/dm/blob-to-buffer.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/blob-to-buffer.svg
 [downloads-url]: https://npmjs.org/package/blob-to-buffer
