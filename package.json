@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "standard": "^5.0.0",
+    "standard": "^6.0.4",
     "tape": "^4.0.0",
     "zuul": "^3.8.0"
   },
