@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "standard": "^6.0.4",
-    "tape": "^4.0.0",
+    "tape": "^4.5.1",
     "zuul": "^3.8.0"
   },
   "homepage": "https://github.com/feross/blob-to-buffer",
