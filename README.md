@@ -30,7 +30,7 @@ var toBuffer = require('blob-to-buffer')
 // Get a Blob somehow...
 var blob = new Blob([ new Uint8Array([1, 2, 3]) ], { type: 'application/octet-binary' })
 
-var buffer = toBuffer(blob, function (err, buffer) {
+toBuffer(blob, function (err, buffer) {
   if (err) throw err
 
   buffer[0] // => 1
