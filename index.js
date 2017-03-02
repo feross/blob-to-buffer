@@ -13,7 +13,7 @@ module.exports = function blobToBuffer (blob, cb) {
   function onLoadEnd (e) {
     reader.removeEventListener('loadend', onLoadEnd, false)
     if (e.error) cb(e.error)
-    else cb(null, new Buffer(reader.result))
+    else cb(null, Buffer.from(reader.result))
   }
 
   reader.addEventListener('loadend', onLoadEnd, false)
