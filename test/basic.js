@@ -8,7 +8,7 @@ var blob = new Blob([ new Uint8Array([1, 2, 3]) ], { type: 'application/octet-bi
 test('Basic tests', function (t) {
   toBuffer(blob, function (err, buffer) {
     if (err) throw err
-    t.deepEqual(buffer, new Buffer([1, 2, 3]))
+    t.deepEqual(buffer, Buffer.from([1, 2, 3]))
     t.end()
   })
 })
