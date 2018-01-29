@@ -2,7 +2,11 @@
   "name": "blob-to-buffer",
   "description": "Convert a Blob to a Buffer",
   "version": "1.2.6",
-  "author": "Feross Aboukhadijeh <feross@feross.org> (http://feross.org/)",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "https://feross.org"
+  },
   "bugs": {
     "url": "https://github.com/feross/blob-to-buffer/issues"
   },
@@ -14,10 +18,10 @@
   },
   "homepage": "https://github.com/feross/blob-to-buffer",
   "keywords": [
-    "convert",
     "blob",
-    "buffer",
     "browserify",
+    "buffer",
+    "convert",
     "filereader"
   ],
   "license": "MIT",
