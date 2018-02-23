@@ -1,5 +1,7 @@
 # blob-to-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feross/blob-to-buffer.svg)](https://greenkeeper.io/)
+
 [travis-image]: https://img.shields.io/travis/feross/blob-to-buffer/master.svg
 [travis-url]: https://travis-ci.org/feross/blob-to-buffer
 [npm-image]: https://img.shields.io/npm/v/blob-to-buffer.svg
