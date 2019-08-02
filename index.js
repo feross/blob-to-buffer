@@ -8,7 +8,7 @@ module.exports = function blobToBuffer (blob, cb) {
     throw new Error('second argument must be a function')
   }
 
-  var reader = new FileReader()
+  const reader = new FileReader()
 
   function onLoadEnd (e) {
     reader.removeEventListener('loadend', onLoadEnd, false)
