@@ -1,9 +1,9 @@
 /* global Blob */
 
-var toBuffer = require('../')
-var test = require('tape')
+const toBuffer = require('../')
+const test = require('tape')
 
-var blob = new Blob([new Uint8Array([1, 2, 3])], { type: 'application/octet-binary' })
+const blob = new Blob([new Uint8Array([1, 2, 3])], { type: 'application/octet-binary' })
 
 test('Basic tests', function (t) {
   toBuffer(blob, function (err, buffer) {
