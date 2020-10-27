@@ -1,3 +1,4 @@
+/*! blob-to-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 /* global Blob, FileReader */
 
 module.exports = function blobToBuffer (blob, cb) {
