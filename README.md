@@ -16,12 +16,9 @@
 Say you're using the ['buffer'](https://github.com/feross/buffer) module on npm, or
 [browserify](http://browserify.org/) and you're working with lots of binary data.
 
-Unfortunately, sometimes the browser or someone else's API gives you a `Blob`. Silly
-browser. How do you convert it to a `Buffer`?
+How do you convert it to a `Buffer`?
 
-Something with a goofy `FileReader` thingy... Time to Google for it yet again... There must be a better way!
-
-***There is! Simply use this module!***
+***Simply use this module!***
 
 Works in the browser. This module is used by [WebTorrent](http://webtorrent.io)!
 
@@ -34,14 +31,12 @@ npm install blob-to-buffer
 ### usage
 
 ```js
-var toBuffer = require('blob-to-buffer')
+const toBuffer = require('blob-to-buffer')
 
 // Get a Blob somehow...
-var blob = new Blob([ new Uint8Array([1, 2, 3]) ], { type: 'application/octet-binary' })
+const blob = new Blob([ new Uint8Array([1, 2, 3]) ])
 
-toBuffer(blob, function (err, buffer) {
-  if (err) throw err
-
+toBuffer(blob).then(buffer => {
   buffer[0] // => 1
   buffer.readUInt8(1) // => 2
 })
